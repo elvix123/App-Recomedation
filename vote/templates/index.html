@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seleccionar Usuario</title>
+</head>
+<body>
+    <h1>Selecciona un usuario:</h1>
+    <form method="POST">
+        {% for user_name in user_names %}
+            <button type="submit" name="selected_user" value="{{ user_name }}">{{ user_name }}</button>
+        {% endfor %}
+    </form>
+</body>
+</html>
